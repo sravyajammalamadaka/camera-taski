@@ -1,12 +1,12 @@
-echo hi
+echo hello          #for printing the given statement
 echo 							
 echo 
-adb shell am start -a android.media.action.IMAGE_CAPTURE
-adb shell input keyevent KEYCODE_FOCUS
-adb shell input keyevent KEYCODE_CAMERA
+adb shell am start -a android.media.action.IMAGE_CAPTURE   #for capturing the image(am is activity manager)to click
+adb shell input keyevent KEYCODE_FOCUS   #to focus the object which we are going to click
+adb shell input keyevent KEYCODE_CAMERA  #action part of the camera app 
 sleep 6
-rem adb shell input tap 1024 70
-echo completed
+rem adb shell input tap 1024 70   #tapping of the camera to click
+echo completed    #the action got completed
 echo 
 
 
